@@ -1,0 +1,63 @@
+ 
+
+
+
+
+ #photo{
+    height:2in;
+    width: 5in;
+    
+    border: 1cap;
+    border-radius: 50%;
+   justify-content: center;
+ }
+ #cname{
+    color: white;
+    background-color: green;
+    padding: 2px;
+    text-align: center;
+ }
+ body{
+    background-color: aqua;
+ }
+ #cent{
+    text-align: center;
+ }
+ #time{
+    text-align: right;
+ }
+ .leg{
+    text-align: center;
+    font-size: large;
+ }
+ #fname{
+    width: 19%;
+   ;
+ }
+ #Address{
+    width: 60%;
+ }
+ #state{
+    padding-left: 20px;
+ }
+
+ #texta{
+    height: 2in;
+    width: 6in;
+ }
+ footer{
+    background-color: greenyellow;
+    color: blue;
+ }
+ #btn{
+    padding: 5px;
+    color: white;
+    background-color: rgb(241, 14, 196);
+    border: 4px;
+    border-radius: 20%;
+ }
+ #sbtn{
+    padding: 5px;
+    color: white;
+    background-color: rgb(45, 8, 211);
+ }

@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+ <!--
+Program name: patient-form.html
+Author: Prem Kharel
+Date created: 01/28/2026
+Date last edited: The date you submitted it
+Version: 1.0
+Description: This is a patient regestration form that needs to filled out by patient.
+-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+    <link rel="stylesheet" href="./patient-form.css">
+</head>
+<body>
+  <div id="cent">  <img src="../clinic.png" id="photo">
+    <h1 id="cname">NeuroLexa Therapuetics</h1>
+    <p id="time"> Today is: <script> document.write(new Date()); </script></p>
+  </div>
+
+  <form>
+    <fieldset> <legend class="leg"> Please enter your information. </legend>
+
+    <label > First Name: </label> <input type="text" placeholder="Enter your First Name"
+     id="fname" maxlength="30" required value="Prem">
+    <label > Middile Initial: </label> <input type="text" id="fname" 
+    maxlength="1" box-size="200" required> 
+    <label > Last Name: </label> <input type="text" id="fname" maxlength="30" required><br> <br>
+    <label> Date of Birth:</label> <input type="date"> <br><br>
+    <label>Social Security:</label>
+    <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="11" required> <br> <br>
+    <label > Address Line 1: </label> 
+    <input type="text" id="Address" maxlength="30" required><br> <br>
+    <label > Address Line 2: </label> 
+    <input type="text" id="Address" maxlength="30"><br> <br>
+    <label > City: </label> 
+    <input type="text" id="city" maxlength="30"> <t>
+    <label id="state"> State: </label> 
+    <select>
+    <option value="AL">AL</option>
+	<option value="AK">AK</option>
+	<option value="AR">AR</option>
+	<option value="AZ">AZ</option>
+	<option value="CA">CA</option>
+	<option value="CO">CO</option>
+	<option value="CT">CT</option>
+	<option value="DC">DC</option>
+	<option value="DE">DE</option>
+	<option value="FL">FL</option>
+	<option value="GA">GA</option>
+	<option value="HI">HI</option>
+	<option value="IA">IA</option>
+	<option value="ID">ID</option>
+	<option value="IL">IL</option>
+	<option value="IN">IN</option>
+	<option value="KS">KS</option>
+	<option value="KY">KY</option>
+	<option value="LA">LA</option>
+	<option value="MA">MA</option>
+	<option value="MD">MD</option>
+	<option value="ME">ME</option>
+	<option value="MI">MI</option>
+	<option value="MN">MN</option>
+	<option value="MO">MO</option>
+	<option value="MS">MS</option>
+	<option value="MT">MT</option>
+	<option value="NC">NC</option>
+	<option value="NE">NE</option>
+	<option value="NH">NH</option>
+	<option value="NJ">NJ</option>
+	<option value="NM">NM</option>
+	<option value="NV">NV</option>
+	<option value="NY">NY</option>
+	<option value="ND">ND</option>
+	<option value="OH">OH</option>
+	<option value="OK">OK</option>
+	<option value="OR">OR</option>
+	<option value="PA">PA</option>
+	<option value="RI">RI</option>
+	<option value="SC">SC</option>
+	<option value="SD">SD</option>
+	<option value="TN">TN</option>
+	<option value="TX">TX</option>
+	<option value="UT">UT</option>
+	<option value="VT">VT</option>
+	<option value="VA">VA</option>
+	<option value="WA">WA</option>
+	<option value="WI">WI</option>
+	<option value="WV">WV</option>
+	<option value="WY">WY</option>
+
+    </select>
+    <label id="state">Zip-Code:</label>
+    <input type="text" inputmode="numeric" pattern="[0-9]*" minlength="5" maxlength="10">
+    <br><br><label>Email Address:</label>
+    <input type="email" placeholder="name@gmail.com"  required><br> <br>
+    <p><b>Please Describe your Current symptoms here...</b></p>
+    <textarea id="texta"> </textarea> <br> <br>
+    <label>Check all of the following that apply.</label>
+    <p> Have you ever had-</p>
+    <input type="checkbox" id="cbox">Chicken Pox
+    <input type="checkbox" id="cbox">Measels
+    <input type="checkbox" id="cbox">Covid-19
+    <input type="checkbox" id="cbox">Small Pox
+    <input type="checkbox" id="cbox">Titanus
+    <br> <br><label>Select Your Gender:</label>
+    <input type="radio"> Male
+    <input type="radio"> Female
+    <input type="radio"> Other<br><br>
+    <label>Have you been vaccinated? </label><br><br>
+    <input type="radio"name="v"> Yes
+    <input type="radio" name="v"> No<br><br>
+    <label> Do you have insurance?</label><br><br>
+    <input type="radio" name="y"> Yes
+    <input type="radio" name="y"> No <br><br>
+    <label>On a scale of 1 to 10, 10 being feeling good, how is your health?</label>
+    <input type="range" min="0" max="10" step="1" value="5" > <br> <br>
+    <label> User Id:</label>
+    <input type="text" maxlength="20"><br><br>
+    <label> Password:</label>
+    <input type="password">
+    <label> Re-enter Password:</label>
+     <input type="password"> <br> <br>
+
+     <button id="btn">Clear and Start Over </button>
+     <button id="sbtn"> Submit the Form </button>
+     <div><footer> 
+        <p> NeuroLexa Therapuetics</p>  <p>Contact US </p> <p> Follow US</p>
+        </footer></div> 
+
+
+
+
+    </fieldset>
+  </form>
+
+    
+</body>
+</html>
